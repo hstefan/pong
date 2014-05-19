@@ -1,0 +1,17 @@
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.db
+*.sln
+*.vcxproj
+/Debug
+/Release
+/tests
+*.swp
+/downloads
+/Makefile
+/*.make
+/bin
+/obj
+*.pyc
