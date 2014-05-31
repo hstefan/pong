@@ -10,6 +10,11 @@ struct Rect;
 template <class T>
 struct Point;
 
+typedef Rect<int> RectI;
+typedef Rect<float> RectF;
+typedef Point<int> PointI;
+typedef Point<float> PointF;
+
 template <class T>
 std::ostream& operator<<(std::ostream& stream, const Rect<T>& rect);
 template <class T>
