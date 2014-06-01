@@ -3,7 +3,7 @@
 #include <ostream>
 
 namespace hst {
-namespace shape {
+namespace gfx {
 
 template <class T>
 struct Rect;

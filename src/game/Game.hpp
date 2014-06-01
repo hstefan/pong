@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Window.hpp"
+#include "core/Window.hpp"
 
 struct SDL_Renderer;
 

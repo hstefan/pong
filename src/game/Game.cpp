@@ -1,5 +1,5 @@
 #include "Game.hpp"
-#include "util.hpp"
+#include "util/util.hpp"
 #include <SDL2/SDL.h>
 
 namespace hst {

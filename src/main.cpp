@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-#include "Game.hpp"
+#include "game/Game.hpp"
 
 int main(int, char**) {
 	SDL_Init(SDL_INIT_EVERYTHING);
