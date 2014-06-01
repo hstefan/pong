@@ -19,14 +19,14 @@ solution "pong"
 		filter "system:linux" 
 			targetdir "bin/lib64inux"
 			objdir "obj/linux"
-	
+
 	project "pong"
 		kind "ConsoleApp"
 		language "c++"
 		flags { "FatalWarnings" }
 		links { "SDL2", "SDL2_mixer", "stb" }
 
-		files { "src/**.cpp", "src/**.hpp" }
+		files { "src/**.cpp", "src/**.hpp", "libs/**.hpp", "libs/**.cpp" }
 		includedirs { "src", "libs/include" }
 
 		filter "configurations:debug"
