@@ -26,8 +26,8 @@ solution "pong"
 		flags { "FatalWarnings" }
 		links { "SDL2", "SDL2_mixer", "stb", "GL" }
 
-		files { "src/**.cpp", "src/**.hpp", "libs/**.hpp", "libs/**.cpp" }
-		includedirs { "src", "libs/include" }
+		files { "src/**.cpp", "src/**.hpp", "lib/**.hpp", "lib/**.cpp" }
+		includedirs { "src", "lib/include" }
 
 		filter "configurations:debug"
 			defines { "DEBUG" }
