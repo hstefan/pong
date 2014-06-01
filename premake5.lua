@@ -5,7 +5,7 @@ solution "pong"
 	project "stb"
 		kind "StaticLib"
 		language "c"
-		files { "src/**.c", "src/**.h" }
+		files { "libs/**.c" }
 		filter "configurations:debug"
 			defines { "DEBUG" }
 			flags { "symbols" }
@@ -27,7 +27,7 @@ solution "pong"
 		links { "SDL2", "SDL2_mixer", "stb" }
 
 		files { "src/**.cpp", "src/**.hpp" }
-		includedirs { "src" }
+		includedirs { "src", "libs/include" }
 
 		filter "configurations:debug"
 			defines { "DEBUG" }
