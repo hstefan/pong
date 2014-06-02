@@ -17,7 +17,7 @@ struct Game {
 	void preRender();
 	void run();
 private:
-	core::Window _win;
+	core::GLWindow _win;
 	SDL_Renderer* _ren;
 };
 

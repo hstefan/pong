@@ -6,7 +6,7 @@ namespace hst {
 namespace game {
 
 Game::Game() 
-	: _win("Pong", WIDTH, HEIGHT, SDL_WINDOW_OPENGL), _ren(nullptr) {
+	: _win("Pong", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIDTH, HEIGHT, SDL_WINDOW_OPENGL), _ren(nullptr) {
 	_ren = SDL_CreateRenderer(_win.raw(), 0, 0);
 }
 
