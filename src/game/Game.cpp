@@ -1,5 +1,6 @@
 #include "Game.hpp"
 #include "util/util.hpp"
+#include "gl_core_3_3.hpp"
 #include <SDL2/SDL.h>
 
 namespace hst {
@@ -27,6 +28,7 @@ void Game::run() {
 		update();
 		preRender();
 		render();
+		_win.swapBuffers();
 		SDL_RenderPresent(_ren);
 		auto elapsed_time = SDL_GetTicks() - starting_time;
 		SDL_Delay(hst::util::clamp(1000U / fps - elapsed_time, 0U, 1000U / fps));
@@ -37,6 +39,8 @@ void Game::update() {
 }
 
 void Game::render() {
+	gl::ClearColor(0.f, 0.f, 0.f, 1.f);
+	gl::Clear(gl::COLOR_BUFFER_BIT);
 }
 
 void Game::preRender() {
