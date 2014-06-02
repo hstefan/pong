@@ -13,7 +13,8 @@ flags = [
 '-std=c++11',
 '-lSDL2',
 '-lpthread',
-"-I../lib/include"
+"-I./lib/include",
+"-I./src"
 ]
 
 compilation_database_folder = ''
