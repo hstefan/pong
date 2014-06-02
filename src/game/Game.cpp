@@ -46,5 +46,5 @@ void Game::render() {
 void Game::preRender() {
 }
 
-}
-}
+} //namespace game
+} //namespace hst
