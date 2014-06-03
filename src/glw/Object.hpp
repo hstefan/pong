@@ -6,7 +6,7 @@
 namespace hst {
 namespace glw {
 
-struct Object : private util::NonCopyable {
+struct Object : protected util::NonCopyable {
 	Object();
 	Object(const GLuint& id);
 protected:
